@@ -1,0 +1,45 @@
+.travolta {
+    width: 400px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.notFoundTitle{
+    font-size: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+.parent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: block;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+body {  background-color: #1A1A1D;}
+
+.backButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    width: 200px;
+}

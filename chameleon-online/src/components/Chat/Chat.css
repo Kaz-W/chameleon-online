@@ -1,0 +1,149 @@
+.outerContainer {
+  display: flow;
+  justify-content: left;
+  align-items: center;
+  overflow-scrolling: auto;
+  height: 100vh;
+  background-color: #1A1A1D;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: 40%;
+  width: 25%;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+.lobby{
+  background-color: #1A1A1D;
+}
+
+.innerContainer{
+  position: relative;
+  width: 650px;
+  left: 10%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+}
+/*
+.usersInLobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background: #FFFFFF;
+  border-radius: 8px;
+  height: 40%;
+  width: 25%;
+  position:absolute;
+  bottom:0;
+  right: 0;
+}*/
+
+.roomNumberContainer{
+  position: absolute;
+  display: block;
+  bottom: 5%;
+  right: 5%;
+}
+
+.roomNumber {
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  margin: 0;
+
+}
+
+.clickable{
+  font-family: Consolas, sans-serif;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.loading{
+  position: absolute;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  margin-left: 0;
+
+}
+
+.loading{
+  position: absolute;
+  width: 100%;
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  color: grey;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  margin-left: 0;
+
+}
+
+.lastWord{
+  color: white;
+}
+
+
+@media (max-width: 450px) {
+  .container {
+    display: none;
+  }
+
+  .innerContainer{
+    width: 90%;
+
+    margin: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+    left: 0;
+  }
+
+  .roomNumber{
+    position: relative;
+    font-size: 120%;
+    text-align: center;
+  }
+
+  .roomNumberContainer{
+    position: relative;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    margin-bottom: 20px;
+    display: inline-block;
+
+  }
+  .mobileDisplay{
+    display:none;
+  }
+  .clickToCopyText{
+    display:none;
+  }
+
+  .loading{
+    width: 100%;
+    font-size: 150%;
+  }
+  .loadingSubtitle{
+    font-size: 120%;
+  }
+}

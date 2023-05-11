@@ -1,0 +1,163 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+}
+
+.joinMediumContainer{
+    width:100%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.joinInnerContainer {
+    margin: 5px;
+  width: 20%;
+}
+
+.joinInput {
+    border: none;
+    color:white;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #131317;
+    text-align: center;
+    border-radius: 10px/10px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: white;
+  font-size: 2vw;
+  padding-bottom: 10px;
+}
+
+.button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #2979FF;
+    padding: 15px;
+    border-radius: 10px/10px;
+    display: inline-block;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #005eff;
+}
+
+.button:active {
+    transform: translate(0, 5%);
+    -ms-transform: translate(0, 5%);
+    -webkit-transform: translate(0, 5%);
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+/* mobile and tablet */
+@media (max-width: 450px) {
+  .joinOuterContainer {
+
+    height: 100%;
+      width: 100%;
+      display: flow;
+      position: absolute;
+
+  }
+
+    .joinMediumContainer{
+        width:100%;
+        align-content: center;
+        display: flow;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -55%);
+
+    }
+
+  .joinInnerContainer {
+
+      margin: 5%;
+    width: 90%;
+
+  }
+  .heading{
+      margin-top: 15%;
+      font-size: 30px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .joinOuterContainer {
+    }
+    .button {
+        padding:5px;
+    }
+    .joinInput {
+        padding:5px;
+    }
+    .heading {
+        font-size: 3vw;
+    }
+
+    .joinInnerContainer {
+        width: 30%;
+    }
+}
+
+.roomInput {
+    text-align: right;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.rightContainer{
+
+}
+
+.hidden {
+    display: none;
+}
+
+.unableToJoinContainer{
+
+    margin-top: 20px;
+    position: absolute;
+    width: 20%;
+    height: 55px;
+    padding-right: 10px;
+}

@@ -1,0 +1,30 @@
+.adminTextBar {
+  font-weight: bolder;
+  font-size: 40px;
+  width: 100%;
+  color: #4d4d4d;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  display: block;
+}
+
+.pressStart{
+  font-weight: bolder;
+}
+
+@media (max-width: 450px) {
+  .adminTextBar {
+    position: absolute;
+    bottom: 5vh;
+    top: auto;
+    font-size: 30px;
+    margin-bottom: 5vh;
+    width: 90%;
+    -webkit-transform: translate(-50%, 50%);
+  }
+}

@@ -1,0 +1,38 @@
+.wordPreviewElements{
+
+    opacity: 1;
+    position: relative;
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+
+.outerPreviewContainer{
+    border-radius: 15px/15px;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    text-align: center;
+    background-color: black;
+    opacity: 1;
+    position: absolute;
+    z-index: 900;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.invisibleWordSetPreviewChild{
+    display: none;
+}
+
+
+.wordSetPreviewChild{
+
+    height:100%;
+    width:100%
+}
